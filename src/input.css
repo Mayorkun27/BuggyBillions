@@ -37,3 +37,9 @@
   background-position: center;
   @apply content-[] h-full z-[-1] absolute bottom-0 left-0 w-full opacity-30
 }
+.newsletter:after{
+  background: url(images/asset1.png);
+  background-size: cover;
+  background-position: center;
+  @apply content-[] h-full z-[-1] absolute bottom-0 left-0 w-full opacity-30
+}
