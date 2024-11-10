@@ -1759,6 +1759,10 @@ input:checked + .toggle-bg {
   text-align: center;
 }
 
+.text-end {
+  text-align: end;
+}
+
 .text-2xl {
   font-size: 1.5rem;
   line-height: 2rem;
@@ -1846,6 +1850,11 @@ input:checked + .toggle-bg {
 .text-white {
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
+.text-secBlack {
+  --tw-text-opacity: 1;
+  color: rgb(40 40 40 / var(--tw-text-opacity));
 }
 
 .opacity-0 {
@@ -2234,6 +2243,11 @@ input:checked + .toggle-bg {
     transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
   }
 
+  .md\:translate-x-\[3\%\] {
+    --tw-translate-x: 3%;
+    transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+  }
+
   .md\:grid-cols-2 {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
@@ -2244,6 +2258,20 @@ input:checked + .toggle-bg {
 
   .md\:gap-6 {
     gap: 1.5rem;
+  }
+
+  .md\:bg-pryPurple\/5 {
+    background-color: rgb(121 111 171 / 0.05);
+  }
+
+  .md\:bg-pryPurple {
+    --tw-bg-opacity: 1;
+    background-color: rgb(121 111 171 / var(--tw-bg-opacity));
+  }
+
+  .md\:text-secBlack {
+    --tw-text-opacity: 1;
+    color: rgb(40 40 40 / var(--tw-text-opacity));
   }
 }
 
@@ -2271,6 +2299,10 @@ input:checked + .toggle-bg {
 
   .lg\:grid-cols-4 {
     grid-template-columns: repeat(4, minmax(0, 1fr));
+  }
+
+  .lg\:bg-pryPurple\/5 {
+    background-color: rgb(121 111 171 / 0.05);
   }
 }
 
