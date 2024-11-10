@@ -24,35 +24,24 @@
   padding: 0;
   box-sizing: border-box;
 }
+.radius{
+     border-radius: 15px;
+}
+.mp {
+     padding: 20px 5vw;
+ }
+ .gradient{
+     background: linear-gradient(269.54deg, #28282882 36.29%, #796FAB 63.71%);
+     background: linear-gradient(269.54deg, rgba(121, 111, 171, 0.2) 2.16%, #796FAB 99.64%);
 
-.navbar {
-  @apply bg-pryPurple items-center my-2 mx-5 backdrop-blur-md
-}
-.navbar-brand {
-  color: #282828;
-}
-.nav-link {
-  font-size: 12px;
-  padding: 10px 25px;
-  border-radius: 5px;
-}
-.nav-link:hover {
-  background: #796fab23;
-}
-.nav-btn1 {
-  font-size: 12px;
-  padding: 10px 25px;
-  border-radius: 5px;
-}
-.nav-btn1:hover {
-  background: #796fab23;
-}
-.nav-btn2 {
-  background: transparent;
-  border: 2px solid #282828;
-  width: 150px;
-}
-.nav-btn2:hover {
-  background: transparent;
-  border: 2px solid #282828;
-}
+ }
+ .btt{
+     background: #e5aa2d!important;
+ }
+ .shadoww{
+     text-shadow: 0px 4px 4px 0px #00000080!important;
+ }
+ .lightt{
+     font-weight: 300!important;
+ }
+/* npx tailwindcss -i ./src/input.css -o ./src/output.css --watch */
