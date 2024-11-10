@@ -34,3 +34,52 @@
   background-position: center;
   @apply content-[""] h-full z-[-1] absolute bottom-0 left-0 w-full opacity-30
 }
+.courses .card:hover{
+    scale: 1.03;
+    box-shadow: 1px 1px 10px #e3941e6c;
+    .fa-html5{
+        color: #e44d26 !important;
+    }
+    .fa-css3{
+        color: #42a5f5 !important;
+    }
+    .fa-bootstrap{
+        color: #663399 !important;
+    }
+    .fa-js{
+        color: #ffca28 !important;
+    }
+}
+.courses .card{
+  font-size: 12px;
+  .card-img{
+      display: grid;
+      place-items: center;
+      border: 1px solid black;
+      font-size: 8rem;
+      background: #282828;
+      border-radius: 0.375rem;
+      .fab{
+          color: #ffffffee;
+      }
+  }
+  .card-text-mid{
+      font-size: 12px;
+  }
+  a,p{
+      font-size: 12px;
+  }
+}
+.card-text{
+  a:hover{
+      color: #e3951e;
+  }
+  .ti-star-filled{
+      color: #e3951e;
+      font-size: 12px;
+  }
+  .ti-bookmark{
+      font-size: 20px;
+      cursor: pointer;
+  }
+}
