@@ -10,6 +10,42 @@
 <body>
 
     
+
+    <nav class="bg-white hidden border-gray-200 dark:bg-gray-900">
+        <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
+            <a href="https://flowbite.com/" class="flex items-center space-x-3 rtl:space-x-reverse">
+                <img src="https://flowbite.com/docs/images/logo.svg" class="h-8" alt="Flowbite Logo" />
+                <span class="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">Flowbite</span>
+            </a>
+            <div class="flex md:order-2 space-x-3 md:space-x-0 rtl:space-x-reverse">
+                <button type="button" class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-4 py-2 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Get started</button>
+                <button data-collapse-toggle="navbar-cta" type="button" class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600" aria-controls="navbar-cta" aria-expanded="false">
+                    <span class="sr-only">Open main menu</span>
+                    <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 17 14">
+                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 1h15M1 7h15M1 13h15"/>
+                    </svg>
+                </button>
+            </div>
+            <div class="items-center justify-between hidden w-full md:flex md:w-auto md:order-1" id="navbar-cta">
+                <ul class="flex flex-col font-medium p-4 md:p-0 mt-4 border border-gray-100 rounded-lg bg-gray-50 md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
+                    <li>
+                        <a href="#" class="block py-2 px-3 md:p-0 text-white bg-blue-700 rounded md:bg-transparent md:text-blue-700 md:dark:text-blue-500" aria-current="page">Home</a>
+                    </li>
+                    <li>
+                        <a href="#" class="block py-2 px-3 md:p-0 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">About</a>
+                    </li>
+                    <li>
+                        <a href="#" class="block py-2 px-3 md:p-0 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">Services</a>
+                    </li>
+                    <li>
+                        <a href="#" class="block py-2 px-3 md:p-0 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+  
+    
     <section class="herosection lg:h-[100vh] md:h-[70vh] h-[100vh] overflow-hidden md:bg-pryPurple/5 bg-pryPurple">
         <nav class="md:bg-pryPurple bg-secWhite py-10 rounded-xl lg:w-[80%] w-[90%] fixed z-50 top-2 lg:translate-x-[10%] md:translate-x-[3%] mx-5 shadow-[5px_5px_10px_#796fab36]"></nav>
         <div class="container px-5 h-full">
@@ -29,7 +65,7 @@
     <section class="story py-20">
         <div class="container px-5 space-y-10">
             <div class="w-full flex justify-between gap-5 items-end">
-                <h1 class="text-5xl">Our story</h1>
+                <h1 class="md:text-5xl text-4xl">Our story</h1>
                 <hr class="h-1 w-3/4 bg-secBlack rounded-full">
             </div>
             <div class="md:flex grid gap-10">
@@ -49,7 +85,7 @@
     <section class="courses py-10">
         <div class="container px-5 space-y-10">
             <div class="w-full flex flex-row-reverse justify-between gap-5 items-end">
-                <h1 class="text-5xl text-end">Our Courses</h1>
+                <h1 class="md:text-5xl text-4xl text-end">Our Courses</h1>
                 <hr class="h-1 w-[70%] bg-secBlack rounded-full">
             </div>
             <div class="grid md:grid-cols-2 grid-cols-1 md:gap-6">
@@ -100,7 +136,7 @@
     <section class="why py-10">
         <div class="container px-5 space-y-10">
             <div class="w-full flex justify-between gap-5 items-end">
-                <h1 class="text-5xl">Why BuggyBillions?</h1>
+                <h1 class="md:text-5xl text-4xl">Why BuggyBillions?</h1>
                 <hr class="h-1 w-[75%] bg-secBlack rounded-full">
             </div>
             <div class="grid lg:grid-cols-4 md:grid-cols-2 md:gap-6">
@@ -159,18 +195,24 @@
         </div>
     </section>
 
+    <section class="testimonials py-10">
+        <div class="container">
+
+        </div>
+    </section>
+
     <section class="faq py-10">
         <div class="container px-5 space-y-12">
             <div class="w-full flex flex-row-reverse justify-between gap-5 items-end">
-                <h1 class="text-5xl w-1/4">Got Any Questions?</h1>
-                <hr class="h-1 w-[80%] bg-secBlack rounded-full">
+                <h1 class="md:text-5xl text-4xl text-end">Got Any Questions?</h1>
+                <hr class="h-1 lg:w-full w-[70%] bg-secBlack rounded-full">
             </div>
-            <div class="grid lg:grid-cols-3 md:grid-cols-2 md:gap-6">
-                <div class="col-span-1 h-full flex flex-col justify-between">
+            <div class="grid grid-cols-3 gap-10">
+                <div class="lg:col-span-1 col-span-3 h-full flex flex-col gap-5 justify-between">
                     <h3 class="text-4xl">Let's answer a few for you...</h3>
-                    <b class="h-max">Contact Us</b>
+                    <b class="h-max lg:w-3/4">Or you can ask us directly by <a href="">contacting Us</a></b>
                 </div>
-                <div class="col-span-2">
+                <div class="lg:col-span-2 col-span-3">
                     <div id="accordion-collapse" data-accordion="collapse">
                         <h2 id="accordion-collapse-heading-1">
                             <button type="button" class="flex items-center justify-between w-full p-5 font-medium rtl:text-right text-gray-500 border border-b-0 border-gray-200 hover:bg-pryPurple/10 focus:bg-pryPurple focus:text-secWhite gap-3" data-accordion-target="#accordion-collapse-body-1" aria-expanded="false" aria-controls="accordion-collapse-body-1">
@@ -244,35 +286,36 @@
     </section>
 
 
-    <footer class="bg-secBlack py-5 text-white mt-[20%]">
+    <footer class="bg-secBlack py-5 text-white md:mt-[15%] mt-[50%] relative">
         <div class="container px-5">
-
-            <div class="newsletter relative bg-accYellow z-[1] p-5 border-4 border-secWhite min-h-[200px] rounded-2xl -translate-y-[55%] flex items-center justify-between shadow-custom-shadow gap-20">
-                <div class="text-3xl w-2/5 font-bold italic">
-                    <h2>A tech community for Nigerian developers and tech enthusiasts.</h2>
-                </div>
-                <div class="w-3/5 p-5 space-y-5">
-                    <p class="font-light">Gain exclusive access to our life-changing newsletter</p>
-                    <div class="flex gap-10 justify-between">
-                        <button class="bg-secWhite border-4 border-pryPurple/80 w-1/2 text-secBlack py-3 px-8 shadow-[-8px_-8px_10px] shadow-accPink/50 rounded-lg transition-all flex justify-between items-center">
-                            <i class="fa fa-user-plus"></i>
-                            <span>Join the party</span>
-                        </button>
-                        <button class="bg-secWhite/20 backdrop-blur-lg w-1/2 text-secWhite py-2 px-4 rounded-lg transition-all">
-                           <div class="flex w-4/5 mx-auto justify-between items-center border-b-2 border-secWhite pb-1 italic">
-                                <span>Try Buggy</span>
-                                <i class="fa fa-arrow-right -rotate-45"></i>
-                           </div>
-                        </button>
+            <div class="grid grid-cols-12 gap-4 relative h-max lg:pt-[12%] md:pt-[15%] pt-[60%]">
+                <!-- NEWSLETTER -->
+                <div class="col-span-12 absolute top-0 -translate-y-[55%]">
+                    <div class="newsletter w-full relative bg-accYellow z-[1] p-5 border-4 border-secWhite min-h-[200px] rounded-2xl flex flex-wrap md:gap-0 gap-8 items-center justify-between shadow-custom-shadow">
+                        <div class="lg:text-3xl text-2xl lg:w-2/6 md:w-2/5 w-full font-bold italic">
+                            <h2>A tech community for Nigerian developers and tech enthusiasts.</h2>
+                        </div>
+                        <div class="md:w-3/5 w-full lg:p-5 md:space-y-5 space-y-2">
+                            <p class="font-light">Gain exclusive access to our life-changing newsletter</p>
+                            <div class="flex md:flex-row flex-col lg:gap-10 md:gap-5 gap-2 justify-between">
+                                <button class="bg-secWhite border-4 border-pryPurple/80 md:w-1/2 w-3/4 text-secBlack py-3 px-8 shadow-[-8px_-8px_10px] shadow-accPink/50 rounded-lg transition-all flex justify-between items-center">
+                                    <i class="fa fa-user-plus"></i>
+                                    <span>Join the party</span>
+                                </button>
+                                <button class="bg-secWhite/20 backdrop-blur-lg md:w-1/2 w-3/4 ms-auto text-secWhite py-3 px-4 rounded-lg transition-all">
+                                   <div class="flex w-4/5 mx-auto justify-between items-center border-b-2 border-secWhite pb-1 italic">
+                                        <span>Try Buggy</span>
+                                        <i class="fa fa-arrow-right -rotate-45"></i>
+                                   </div>
+                                </button>
+                            </div>
+                        </div>
                     </div>
                 </div>
-            </div>
-
-            <div class="grid grid-cols-12 gap-4 border h-max">
                 <div class="col-span-12 pb-5">
                     <p>Contact us</p>
                 </div>
-                <div class="md:col-span-7 col-span-12 h-max">
+                <div class="md:col-span-7 col-span-12">
                     <div style="max-width: 450px !important;">
                         <span class="">
                         Enroll now to take actionable steps and get more serious about advancing your career with our expert guidance, comprehensive resources, and a supportive community dedicated to your success.
@@ -280,69 +323,57 @@
                     </div>
                 </div>
                 <div class="md:col-span-5 col-span-12">
-                <div>
-                    <div class="pb-5">
-                    <p class="p-0 m-0">
-                    buggybillions@com.com
-        
-                    </p>
-                    <p class="p-0 m-0">
-                        0701 0015 366
-                    </p>
-                    </div>
-                
-                    <div class="py-5 border-t border-gray-500">
-                    <div class="grid grid-cols-12">
-                        <div class="col-span-6">
-                        <p>Nigeria</p>
+                    <div class="flex flex-col">
+                        <div class="pb-5">
+                            <p class="p-0 m-0">buggybillions@com.com</p>
+                            <p class="p-0 m-0">0701 0015 366</p>
                         </div>
-                        <div class="col-span-6">
-                        <p>Suntoy Building Adjacent</p>
-                        <p>Winners Chapel Along</p>
-                        <p>Ogbomso-Ilorin Old Road</p>
-                        <p>Ogbomoso Oyo State</p>
-                        </div>
-                    </div>
-
-                    </div>
-                    <div class="py-5 border-t border-gray-500">
-                        <div class="grid grid-rows-12 border h-max">
-                            <div class="col-span-6">
-                                <p>Follow</p>
+                        <div class="py-5 border-t border-gray-500">
+                            <div class="grid grid-cols-12">
+                                <div class="col-span-6">
+                                <p>Nigeria</p>
+                                </div>
+                                <div class="col-span-6">
+                                <p>Suntoy Building Adjacent</p>
+                                <p>Winners Chapel Along</p>
+                                <p>Ogbomso-Ilorin Old Road</p>
+                                <p>Ogbomoso Oyo State</p>
+                                </div>
                             </div>
-                            <div class="col-span-6">
-                            <a href="https://www.instagram.com/buggybillions_ng?igsh=c3hmMWdkNG1xb3Q4">
-                                <p>Instagram</p>
-
-                            </a>
-                            <a href="https://x.com/BuggyBillionsng?t=RNzZTahjujNodiLgzIeRCA&amp;s=09
-                            ">
-                                <p>Twitter</p>
-                            </a>
-                            <a href="https://wa.me/2347010015366?text=Hello%2C%20I%20am%20interested%20in%20the%20software%20engineering%20course%2C%20I%20will%20save%20your%20contact%20as%20Buggy%2C%20save%20mine%20as">
-
-
-                                <p>WhatsApp</p>
-                            </a>
+                        </div>
+                        <div class="py-5 border-t border-gray-500">
+                            <div class="flex justify-between items-start">
+                                <div class="w-1/2">
+                                    <p>Follow</p>
+                                </div>
+                                <div class="w-1/2">
+                                    <a href="https://www.instagram.com/buggybillions_ng?igsh=c3hmMWdkNG1xb3Q4">
+                                        <p>Instagram</p>
+                                    </a>
+                                    <a href="https://x.com/BuggyBillionsng?t=RNzZTahjujNodiLgzIeRCA&amp;s=09
+                                    ">
+                                        <p>Twitter</p>
+                                    </a>
+                                    <a href="https://wa.me/2347010015366?text=Hello%2C%20I%20am%20interested%20in%20the%20software%20engineering%20course%2C%20I%20will%20save%20your%20contact%20as%20Buggy%2C%20save%20mine%20as">
+                                        <p>WhatsApp</p>
+                                    </a>
+                                </div>
                             </div>
                         </div>
                     </div>
-                </div>
                 </div>
             </div>
-            <div class="pt-5 border-t border-gray-500">
-                <div class="grid grid-cols-12 items-center">
-                <div class="col-span-5">
-                    <h6 class="p-0 m-0">© Copyright 2024 @ buggybillions</h6>
-                </div>
-                <div class="col-span-5">
-                    <small class="p-0 m-0 text-xs">Can’t take fun out of the developer</small>
-                </div>
-                <div class="col-span-2 flex justify-end">
-                    <small>
-                    Policy privacy
-                    </small>
-                </div>
+            <div class="pt-5 mt-10 border-t border-gray-500">
+                <div class="grid grid-cols-12 items-center md:space-y-0 space-y-2">
+                    <div class="md:col-span-5 col-span-12 md:text-start text-center">
+                        <h6 class="p-0 m-0">© Copyright 2024 @ buggybillions</h6>
+                    </div>
+                    <div class="md:col-span-5 col-span-12 text-center">
+                        <small class="p-0 m-0 text-xs">Can’t take fun out of the developer</small>
+                    </div>
+                    <div class="md:col-span-2 col-span-12 whitespace-nowrap md:text-end text-center">
+                        <small>Policy privacy</small>
+                    </div>
                 </div>
             </div>
         </div>
