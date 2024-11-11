@@ -38,3 +38,52 @@
   color: #00000025;
   @apply content-[""] h-full z-[-1] absolute top-0 left-0 w-full opacity-30
 }
+
+
+.testi-card{
+  background: #796fab;
+  box-shadow: 5px 5px 10px #796fab36;
+  position: relative;
+  color: #ffffffee;
+  z-index: 1;
+  .statistics{
+      font-size: 4rem;
+      font-weight: 900;
+  }
+  .counter-container,
+  img{
+      z-index: 4;
+  }
+  img{
+      width: 20%;
+      margin: 0 auto;
+  }
+}
+.testi-card:after{
+  content: "";
+  height: 100%;
+  z-index: -1;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background: url(images/asset1.png);
+  background-size: cover;
+  opacity: 0.5;
+  background-position: center;
+}
+.testi-card:hover{
+  margin-top: -5px;
+  transition: .2s linear;
+}
+.general{
+  display: flex;
+  gap: 2rem;
+  overflow: auto !important;
+  scroll-snap-type: x mandatory;
+}
+.general > .card{
+  min-width: 100%;
+  scroll-snap-align: start;
+  background: #796fab;
+}
