@@ -40,42 +40,6 @@
 }
 
 
-.testi-card{
-  background: #796fab;
-  box-shadow: 5px 5px 10px #796fab36;
-  position: relative;
-  color: #ffffffee;
-  z-index: 1;
-  .statistics{
-      font-size: 4rem;
-      font-weight: 900;
-  }
-  .counter-container,
-  img{
-      z-index: 4;
-  }
-  img{
-      width: 20%;
-      margin: 0 auto;
-  }
-}
-.testi-card:after{
-  content: "";
-  height: 100%;
-  z-index: -1;
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  background: url(images/asset1.png);
-  background-size: cover;
-  opacity: 0.5;
-  background-position: center;
-}
-.testi-card:hover{
-  margin-top: -5px;
-  transition: .2s linear;
-}
 .general{
   /* scroll-snap-type: x mandatory; */
   @apply flex gap-[2rem] justify-around overflow-scroll snap-x snap-mandatory
@@ -84,8 +48,7 @@
   @apply hidden
 }
 .general > div{
-  min-width: 50%;
-  @apply snap-start overflow-hidden border-4 border-accPink shadow-[5px_5px_20px] shadow-accYellow/20 lg:min-w-[50%] md:min-w-full min-w-[130%]
+  @apply snap-start overflow-hidden border-4 border-accPink shadow-[5px_5px_20px] shadow-accYellow/20 lg:min-w-[70%] md:min-w-full min-w-[130%] md:h-[300px] h-max
 }
 .apply-btn{
   box-shadow: inset -5px -5px 5px #eff6f839, -5px -5px 5px #eff6f839;
