@@ -77,13 +77,21 @@
   transition: .2s linear;
 }
 .general{
-  display: flex;
-  gap: 2rem;
-  overflow: auto !important;
-  scroll-snap-type: x mandatory;
+  /* scroll-snap-type: x mandatory; */
+  @apply flex gap-[2rem] justify-around overflow-scroll snap-x snap-mandatory
 }
-.general > .card{
-  min-width: 100%;
-  scroll-snap-align: start;
-  background: #796fab;
+.general::-webkit-scrollbar{
+  @apply hidden
+}
+.general > div{
+  min-width: 50%;
+  @apply snap-start overflow-hidden border-4 border-accPink shadow-[5px_5px_20px] shadow-accYellow/20 lg:min-w-[50%] md:min-w-full min-w-[130%]
+}
+.apply-btn{
+  box-shadow: inset -5px -5px 5px #eff6f839, -5px -5px 5px #eff6f839;
+}
+@media (max-width: 991px) {
+  .apply-btn{
+    box-shadow: inset -5px -5px 5px #796faba8, -5px -5px 5px #796faba8 !important;
+  }
 }
