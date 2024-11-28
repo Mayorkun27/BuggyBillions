@@ -1,2 +1,2 @@
 # BuggyBillions
- This is the landing page
+ This is the landing page of BuggyBillions

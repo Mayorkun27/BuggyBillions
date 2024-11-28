@@ -24,6 +24,9 @@
   padding: 0;
   box-sizing: border-box;
 }
+.container{
+  @apply md:w-[85%] w-[100%] mx-auto
+}
 
 .stat-card {
   box-shadow: 5px 5px 10px #796fab55;
@@ -48,7 +51,7 @@
   @apply hidden
 }
 .general > div{
-  @apply snap-start overflow-hidden border-4 border-accPink shadow-[5px_5px_20px] shadow-accYellow/20 lg:min-w-[70%] md:min-w-full min-w-[130%] md:h-[300px] h-max
+  @apply snap-start overflow-hidden border-4 border-accPink shadow-[5px_5px_20px] shadow-accYellow/20 lg:min-w-[50%] md:min-w-full min-w-[130%] md:h-[250px] h-max
 }
 .apply-btn{
   box-shadow: inset -5px -5px 5px #eff6f839, -5px -5px 5px #eff6f839;

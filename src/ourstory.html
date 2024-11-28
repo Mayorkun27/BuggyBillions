@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="./output.css" rel="stylesheet">
+    <link rel="stylesheet" href="fontawesome-free-6.4.2-web/css/all.css">
+    <link rel="icon" href="/images/asset12.png" type="image/png">
+    <title>BuggyBillions</title>
+    <script>
+        function toggleNavbar() {
+            const navbar = document.getElementById("navbar-cta2");
+            navbar.classList.toggle("hidden");
+        }
+    </script>
+</head>
+<body>
+    
+    <nav class="lg:bg-pryPurple bg-secWhite rounded-xl lg:w-[80%] md:w-[94.5%] w-[90%] fixed z-50 top-2 lg:translate-x-[10.5%] md:translate-x-[3%] lg:mx-5 md:mx-0 mx-4 shadow-custom-shadow text-sm">
+        <div class="max-w-screen-xl flex lg:flex-wrap md:flex-nowrap flex-wrap items-center justify-between mx-auto md:py-4 py-4 px-4">
+            <a target="_blank" href="https://buggybillions.com/waitlist" class="flex items-center space-x-3 rtl:space-x-reverse lg:w-1/6 w-max">
+                <img src="images/img1.png" class="h-8 w-full object-contain lg:block hidden" alt="BuggyBillions Logo" />
+                <img src="images/asset11.png" class="h-8 lg:hidden inline-block" alt="BuggyBillions Logo" />
+            </a>
+            <div class="flex md:order-2 space-x-3 lg:space-x-0 rtl:space-x-reverse">
+                <button type="button" class="lg:text-secWhite text-secBlack border-4 lg:border-secWhite border-pryPurple text-lg hidden md:block radius bg-transparent hover:text-secWhite font-medium rounded-lg py-2 px-9 text-center apply-btn" onclick="whatsapp()">Apply</button>
+                <button onclick="toggleNavbar()" type="button" class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm md:text-gray-50 text-gray-500 rounded-lg md:hidden md:hover:bg-secWhite hover:bg-pryPurple focus:outline-none focus:ring-2 focus:ring-pryPurple md:focus:text-pryPurple focus:text-secWhite" aria-controls="navbar-cta2" aria-expanded="false">
+                    <span class="sr-only">Open main menu</span>
+                    <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 17 14">
+                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 1h15M1 7h15M1 13h15"/>
+                    </svg>
+                </button>
+            </div>
+            <div class="items-center justify-between hidden w-full md:flex md:w-auto md:order-1 lg:mx-auto md:mx-auto" id="navbar-cta2">
+                <ul class="flex flex-col items-center font-medium p-4 md:p-0 mt-4 rounded-lg rtl:space-x-reverse md:flex-row md:mt-0 md:border-0 lg:text-base text-sm">
+                    <li class="lg:hover:bg-secBlack/30 lg:hover:backdrop-blur-lg p-1 rounded-lg transition-all">
+                        <a href="index.html#about" class="block py-2 px-3 rounded bg-pryPurple text-secWhite hover:bg-pryPurple hover:text-secWhite lg:text-secWhite lg:hover:bg-transparent lg:hover:text-secWhite md:hover:bg-secWhite md:hover:text-pryPurple" aria-current="page">About</a>
+                    </li>
+                    <li class="lg:hover:bg-secBlack/30 lg:hover:backdrop-blur-lg p-1 rounded-lg transition-all">
+                        <a href="index.html#courses" class="block py-2 px-3 rounded hover:bg-pryPurple hover:text-secWhite lg:text-secWhite lg:hover:bg-transparent lg:hover:text-secWhite text-secBlack md:hover:bg-secWhite md:hover:text-pryPurple">Courses</a>
+                    </li>
+                    <li class="lg:hover:bg-secBlack/30 lg:hover:backdrop-blur-lg p-1 rounded-lg transition-all">
+                        <a href="index.html#why" class="block py-2 px-3 rounded hover:bg-pryPurple hover:text-secWhite lg:text-secWhite lg:hover:bg-transparent lg:hover:text-secWhite text-secBlack md:hover:bg-secWhite md:hover:text-pryPurple">Services</a>
+                    </li>
+                    <li class="lg:hover:bg-secBlack/30 lg:hover:backdrop-blur-lg p-1 rounded-lg transition-all">
+                        <a href="index.html#testimonials" class="block py-2 px-3 rounded hover:bg-pryPurple hover:text-secWhite lg:text-secWhite lg:hover:bg-transparent lg:hover:text-secWhite text-secBlack md:hover:bg-secWhite md:hover:text-pryPurple">Testimonials</a>
+                    </li>
+                    <li class="lg:hover:bg-secBlack/30 lg:hover:backdrop-blur-lg p-1 rounded-lg transition-all">
+                        <a href="index.html#faqs" class="block py-2 px-3 rounded hover:bg-pryPurple hover:text-secWhite lg:text-secWhite lg:hover:bg-transparent lg:hover:text-secWhite text-secBlack md:hover:bg-secWhite md:hover:text-pryPurple">FAQs</a>
+                    </li>
+                    <li>
+                        <button type="button" class="lg:text-secWhite text-secBlack border-4 lg:border-secWhite border-pryPurple text-lg inline-flex md:hidden bg-transparent hover:text-secWhite font-medium rounded-lg py-2 px-9 text-center apply-btn" onclick="whatsapp()">Apply</button>
+                   </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <section class="story pt-20 pb-10" id="story">
+        <div class="container px-5">
+            <h1 class="md:text-4xl mt-6 text-3xl whitespace-nowrap">What is BuggyBillions</h1>
+            <div class="grid lg:grid-cols-2 grid-cols-1 md:text-lg text-base md:gap-12 gap-5">
+                <div class="img my-4 w-full me-auto rounded-3xl overflow-hidden border-4 border-secWhite/50 shadow-lg shadow-secBlack/20 h-[95%]">
+                    <img src="images/img2.png" alt="..." class="w-full h-full object-cover">
+                </div>
+                <div class="space-y-2">
+                    <div class="w-full flex justify-between gap-5 items-end">
+                        <h1 class="md:text-3xl text-2xl whitespace-nowrap">A Problem?</h1>
+                        <hr class="h-1 w-[75%] bg-secBlack rounded-full">
+                    </div>
+                    <p>In a country like Nigeria where the odds of succeeding are against its citizens, especially those from rural areas, it is very common to see young brilliant minds lose faith in their career paths, especially after long years of being beaten down - making attempts to get the wheel rolling in their favor, but they just keep stumbling upon series of heartbreaking halts that would make a normal mind quit aspiring and simply accept the norms of not standing out, not willing to strive, and becoming unmotivated to move on.</p>
+                </div>
+                <div class="space-y-2">
+                    <div class="text space-y-3">
+                        <div class="w-full flex justify-between gap-5 items-end">
+                            <h1 class="md:text-3xl text-2xl whitespace-nowrap">The grit</h1>
+                            <hr class="h-1 w-[75%] bg-secBlack rounded-full">
+                        </div>
+                        <p>This is what a larger part of Nigerian youths interested in following a technological career face for a long part during the start of their career before they eventually hit the jackpot. It's always a rough journey for Nigerians and most learners from third-world countries like ours.
+                        The dreams of a thousand minds crunched by unfavourable environment and unpredictable factors to the few tens that escapes the drag to sour among the stars.</p>
+                    </div>
+                </div>
+                <div class="space-y-2">
+                    <div class="w-full flex justify-between gap-5 items-end">
+                        <h1 class="md:text-3xl text-2xl whitespace-nowrap">Our Mission</h1>
+                        <hr class="h-1 w-[75%] bg-secBlack rounded-full">
+                    </div>
+                    <p>Our mission at BuggyBillions is to help young Nigerians overcome the difficulty of learning a tech skill on their own without guidance and companionship, and we believe we can do it.</p>
+                </div>
+                <div class="space-y-2">
+                    <div class="w-full flex justify-between gap-5 items-end">
+                        <h1 class="md:text-3xl text-2xl whitespace-nowrap">The Initiative</h1>
+                        <hr class="h-1 w-[75%] bg-secBlack rounded-full">
+                    </div>
+                    <p>BuggyBillions is a place that exists in the heart and soul of our members. Our sole purpose is to help tech enthusiasts like ours comb through the thick and thin of their career paths with fewer bruises and better success rates. We want to help them make the right decisions along the way. We want to help people learn complex topics effectively and provide the motivation that they need along the way. More importantly, we believe that our efforts will yield good results for these people, and there will be more job opportunities for them to choose from. Not only will there be jobs, but there will also be employable manpower in the economy to contribute to the development of the country.</p>
+                </div>
+                <div class="lg:d-flex hidden img my-4 w-full me-auto rounded-3xl overflow-hidden border-4 border-secWhite/50 shadow-lg shadow-secBlack/20 h-[95%]">
+                    <img src="images/img4.png" alt="..." class="w-full h-full object-cover">
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <footer class="hidden bg-secBlack py-5 text-white md:mt-[15%] mt-[50%] relative">
+        <div class="container px-5">
+            <div class="grid grid-cols-12 gap-4 relative h-max lg:pt-[12%] md:pt-[15%] pt-[60%]">
+                <!-- NEWSLETTER -->
+                <div class="col-span-12 absolute top-0 -translate-y-[55%]">
+                    <div class="newsletter w-full relative bg-accYellow z-[1] p-5 border-4 border-secWhite min-h-[200px] rounded-2xl flex flex-wrap md:gap-0 gap-8 items-center justify-between shadow-custom-shadow">
+                        <div class="lg:text-3xl text-2xl lg:w-2/6 md:w-2/5 w-full font-bold italic">
+                            <h2>A tech community for Nigerian developers and tech enthusiasts.</h2>
+                        </div>
+                        <div class="md:w-3/5 w-full lg:p-5 md:space-y-5 space-y-2">
+                            <p class="font-light">Gain exclusive access to our life-changing newsletter</p>
+                            <div class="flex md:flex-row flex-col lg:gap-10 md:gap-5 gap-2 justify-between">
+                                <button class="bg-secWhite border-4 border-pryPurple/80 md:w-1/2 w-3/4 text-secBlack py-3 px-8 shadow-[-8px_-8px_10px] shadow-accPink/50 rounded-lg transition-all flex justify-between items-center">
+                                    <i class="fa fa-user-plus"></i>
+                                    <span>Join the party</span>
+                                </button>
+                                <button class="bg-secWhite/20 backdrop-blur-lg md:w-1/2 w-3/4 ms-auto text-secWhite py-3 px-4 rounded-lg transition-all">
+                                   <div class="flex w-4/5 mx-auto justify-between items-center border-b-2 border-secWhite pb-1 italic">
+                                        <span>Try Buggy</span>
+                                        <i class="fa fa-arrow-right -rotate-45"></i>
+                                   </div>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-span-12 pb-5">
+                    <p>Contact us</p>
+                </div>
+                <div class="md:col-span-7 col-span-12">
+                    <div style="max-width: 450px !important;">
+                        <span class="">
+                        Enroll now to take actionable steps and get more serious about advancing your career with our expert guidance, comprehensive resources, and a supportive community dedicated to your success.
+                        </span>
+                    </div>
+                </div>
+                <div class="md:col-span-5 col-span-12">
+                    <div class="flex flex-col">
+                        <div class="pb-5">
+                            <p class="p-0 m-0">buggybillions@com.com</p>
+                            <p class="p-0 m-0">0701 0015 366</p>
+                        </div>
+                        <div class="py-5 border-t border-gray-500">
+                            <div class="grid grid-cols-12">
+                                <div class="col-span-6">
+                                <p>Nigeria</p>
+                                </div>
+                                <div class="col-span-6">
+                                <p>Suntoy Building Adjacent</p>
+                                <p>Winners Chapel Along</p>
+                                <p>Ogbomso-Ilorin Old Road</p>
+                                <p>Ogbomoso Oyo State</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="py-5 border-t border-gray-500">
+                            <div class="flex justify-between items-start">
+                                <div class="w-1/2">
+                                    <p>Follow</p>
+                                </div>
+                                <div class="w-1/2">
+                                    <a href="https://www.instagram.com/buggybillions_ng?igsh=c3hmMWdkNG1xb3Q4">
+                                        <p>Instagram</p>
+                                    </a>
+                                    <a href="https://x.com/BuggyBillionsng?t=RNzZTahjujNodiLgzIeRCA&amp;s=09
+                                    ">
+                                        <p>Twitter</p>
+                                    </a>
+                                    <a href="https://wa.me/2347010015366?text=Hello%2C%20I%20am%20interested%20in%20the%20software%20engineering%20course%2C%20I%20will%20save%20your%20contact%20as%20Buggy%2C%20save%20mine%20as">
+                                        <p>WhatsApp</p>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="pt-5 mt-10 border-t border-gray-500">
+                <div class="grid grid-cols-12 items-center md:space-y-0 space-y-2">
+                    <div class="md:col-span-5 col-span-12 md:text-start text-center">
+                        <h6 class="p-0 m-0">© Copyright 2024 @ buggybillions</h6>
+                    </div>
+                    <div class="md:col-span-5 col-span-12 text-center">
+                        <small class="p-0 m-0 text-xs">Can’t take fun out of the developer</small>
+                    </div>
+                    <div class="md:col-span-2 col-span-12 whitespace-nowrap md:text-end text-center">
+                        <small>Policy privacy</small>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../node_modules/flowbite/dist/flowbite.min.js"></script>
+    <script>
+        function whatsapp() {
+            window.open('https://wa.me/2347010015366', '_blank');
+        }
+    </script>
+</body>
+</html>
