@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Scroll Modal</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+    }
+    .section {
+      height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background-color: lightgray;
+      border-bottom: 2px solid #ccc;
+    }
+    .modal {
+      position: fixed;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 300px;
+      padding: 20px;
+      background: white;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+      border-radius: 8px;
+      display: none;
+      z-index: 1000;
+    }
+    .overlay {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0, 0, 0, 0.5);
+      display: none;
+      z-index: 999;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="section" id="section1">Section 1</div>
+  <div class="section" id="section2">Section 2</div>
+  <div class="section" id="section3">Section 3</div>
+
+  <div class="overlay" id="overlay"></div>
+  <div class="modal" id="modal">
+    <p>This is a modal for the section!</p>
+    <button id="closeModal">Close</button>
+  </div>
+
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+        const sections = document.querySelectorAll(".section");
+        const modal = document.getElementById("modal");
+        const overlay = document.getElementById("overlay");
+        const closeModalBtn = document.getElementById("closeModal");
+
+        const observerOptions = {
+            root: null,
+            threshold: 0.5, // Trigger when 50% of the section is visible
+        };
+
+        const showModal = () => {
+            modal.style.display = "block";
+            overlay.style.display = "block";
+        };
+
+        const hideModal = () => {
+            modal.style.display = "none";
+            overlay.style.display = "none";
+        };
+
+        const observerCallback = (entries) => {
+            entries.forEach((entry) => {
+            if (entry.isIntersecting) {
+                showModal();
+            }
+            });
+        };
+
+        const observer = new IntersectionObserver(observerCallback, observerOptions);
+        sections.forEach((section) => observer.observe(section));
+
+        closeModalBtn.addEventListener("click", hideModal);
+        overlay.addEventListener("click", hideModal);
+    });
+
+  </script>
+</body>
+</html>

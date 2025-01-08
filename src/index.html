@@ -1,11 +1,11 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" style="scroll-behavior: smooth;">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="./output.css" rel="stylesheet">
-    <link rel="stylesheet" href="fontawesome-free-6.4.2-web/css/all.css">
-    <link rel="icon" href="/images/asset12.png" type="image/png">
+    <link rel="stylesheet" type="text/html" href="fontawesome-free-6.4.2-web/css/all.css">
+    <link rel="icon" href="images/asset12.png" type="image/png">
     <title>BuggyBillions</title>
     <script>
         function toggleNavbar() {
@@ -17,7 +17,7 @@
 <body>
     
     <section class="herosection lg:h-[100vh] md:h-[70vh] h-[100vh] overflow-hidden lg:bg-pryPurple/10 bg-pryPurple" id="home">
-        <nav class="lg:bg-pryPurple hidde bg-secWhite rounded-xl lg:w-[80%] md:w-[94.5%] w-[90%] fixed z-50 top-2 lg:translate-x-[10.5%] md:translate-x-[3%] lg:mx-5 md:mx-0 mx-4 shadow-custom-shadow text-sm">
+        <nav class="lg:bg-pryPurple bg-secWhite rounded-xl lg:w-[80%] md:w-[90%] w-[90%] fixed z-10 top-2 lg:translate-x-[10.5%] md:translate-x-[6%] translate-x-1 lg:mx-5 md:mx-0 mx-4 shadow-custom-shadow text-sm">
             <div class="max-w-screen-xl flex lg:flex-wrap md:flex-nowrap flex-wrap items-center justify-between mx-auto md:py-4 py-4 px-4">
                 <a target="_blank" href="https://buggybillions.com/waitlist" class="flex items-center space-x-3 rtl:space-x-reverse lg:w-1/6 w-max">
                     <img src="images/img1.png" class="h-8 w-full object-contain lg:block hidden" alt="BuggyBillions Logo" />
@@ -36,19 +36,19 @@
                 </div>
                 <div class="items-center justify-between hidden w-full md:flex md:w-auto md:order-1 lg:mx-auto md:mx-auto" id="navbar-cta2">
                     <ul class="flex flex-col items-center font-medium p-4 md:p-0 mt-4 rounded-lg rtl:space-x-reverse md:flex-row md:mt-0 md:border-0 lg:text-base text-sm">
-                        <li class="lg:hover:bg-secBlack/30 lg:hover:backdrop-blur-lg p-1 rounded-lg transition-all">
+                        <li class="nav-link lg:hover:bg-secBlack/30 lg:hover:backdrop-blur-lg p-1 rounded-lg transition-all">
                             <a href="#about" class="block py-2 px-3 rounded bg-pryPurple text-secWhite hover:bg-pryPurple hover:text-secWhite lg:text-secWhite lg:hover:bg-transparent lg:hover:text-secWhite md:hover:bg-secWhite md:hover:text-pryPurple" aria-current="page">About</a>
                         </li>
-                        <li class="lg:hover:bg-secBlack/30 lg:hover:backdrop-blur-lg p-1 rounded-lg transition-all">
+                        <li class="nav-link lg:hover:bg-secBlack/30 lg:hover:backdrop-blur-lg p-1 rounded-lg transition-all">
                             <a href="#courses" class="block py-2 px-3 rounded hover:bg-pryPurple hover:text-secWhite lg:text-secWhite lg:hover:bg-transparent lg:hover:text-secWhite text-secBlack md:hover:bg-secWhite md:hover:text-pryPurple">Courses</a>
                         </li>
-                        <li class="lg:hover:bg-secBlack/30 lg:hover:backdrop-blur-lg p-1 rounded-lg transition-all">
+                        <li class="nav-link lg:hover:bg-secBlack/30 lg:hover:backdrop-blur-lg p-1 rounded-lg transition-all">
                             <a href="#why" class="block py-2 px-3 rounded hover:bg-pryPurple hover:text-secWhite lg:text-secWhite lg:hover:bg-transparent lg:hover:text-secWhite text-secBlack md:hover:bg-secWhite md:hover:text-pryPurple">Services</a>
                         </li>
-                        <li class="lg:hover:bg-secBlack/30 lg:hover:backdrop-blur-lg p-1 rounded-lg transition-all">
+                        <li class="nav-link lg:hover:bg-secBlack/30 lg:hover:backdrop-blur-lg p-1 rounded-lg transition-all">
                             <a href="#testimonials" class="block py-2 px-3 rounded hover:bg-pryPurple hover:text-secWhite lg:text-secWhite lg:hover:bg-transparent lg:hover:text-secWhite text-secBlack md:hover:bg-secWhite md:hover:text-pryPurple">Testimonials</a>
                         </li>
-                        <li class="lg:hover:bg-secBlack/30 lg:hover:backdrop-blur-lg p-1 rounded-lg transition-all">
+                        <li class="nav-link lg:hover:bg-secBlack/30 lg:hover:backdrop-blur-lg p-1 rounded-lg transition-all">
                             <a href="#faqs" class="block py-2 px-3 rounded hover:bg-pryPurple hover:text-secWhite lg:text-secWhite lg:hover:bg-transparent lg:hover:text-secWhite text-secBlack md:hover:bg-secWhite md:hover:text-pryPurple">FAQs</a>
                         </li>
                         <li>
@@ -452,11 +452,101 @@
         </div>
     </footer>
 
-    <script src="../node_modules/flowbite/dist/flowbite.min.js"></script>
+    <div class="w-full h-[100vh] bg-black/80 text-white fixed top-0 left-0 z-20 flex items-center justify-center p-10" id="popup">
+        <button class="w-14 h-14 bg-pryPurple rounded-full flex items-center justify-center cursor-pointer shadow-xl shadow-accYellow/10 absolute top-10 right-10 rotate-45" id="closeModal">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor">
+                <path strokeLinecap="round" strokeLinejoin="round" d="M12 4.5v15m7.5-7.5h-15" class="" />
+            </svg>
+        </button>
+        <div class="lg:w-1/2 w-full h-full" id="modal">
+            <img src="images/testimonials/img2.jpg" alt="..." class="object-contain w-full h-full">
+        </div>
+    </div>
+
+    <script src="./flowbite.min.js"></script>
     <script>
         function whatsapp() {
             window.open('https://wa.me/2347010015366', '_blank');
         }
     </script>
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            const sections = document.querySelectorAll("section");
+            const popup = document.getElementById("popup");
+            const modal = document.getElementById("modal");
+            const closeModalBtn = document.getElementById("closeModal");
+
+            let index = -1;
+
+            const images = ["images/testimonials/img1.jpg", "images/testimonials/img2.jpg", "images/testimonials/img3.jpg", "images/testimonials/img4.jpg", "images/testimonials/img5.jpg"];
+
+            const observerOptions = {
+                root: null,
+                threshold: 0.5,
+            };
+
+            const showModal = () => {
+                popup.style.display = "flex";
+                const img = modal.querySelector("img");
+                index = index++ < images.length - 1 ? index++ : 0;
+                img.src = images[index];
+            };
+
+            const hideModal = () => {
+                popup.style.display = "none";
+            };
+
+            const observerCallback = (entries) => {
+                entries.forEach((entry) => {
+                    if (entry.isIntersecting) {
+                        showModal();
+                    }
+                });
+            };
+
+            const observer = new IntersectionObserver(observerCallback, observerOptions);
+            sections.forEach((section) => observer.observe(section));
+
+            let prevPos = 0;
+            let scrollDirection = null;
+
+            window.addEventListener("scroll", () => {
+                const currentScrollPosition = window.scrollY;
+                const documentHeight = document.body.offsetHeight;
+
+                if (currentScrollPosition > prevPos) {
+                    scrollDirection = "down"
+                } else if (currentScrollPosition < prevPos) {
+                    scrollDirection = "up"
+                }
+
+                prevPos = currentScrollPosition
+
+                if (scrollDirection === "up") {
+                    observer.disconnect()
+                    hideModal()
+                } else if (scrollDirection == "down") {
+                    sections.forEach((section) => observer.observe(section));
+                }
+            })
+
+            closeModalBtn.addEventListener("click", hideModal);
+            popup.addEventListener("click", hideModal);
+        });
+
+    </script>
+    <!-- <script>
+        const links = document.querySelectorAll("#navbar-cta2 .nav-link");
+        links.forEach(link => {
+            link.classList.remove("active")
+            link.addEventListener("click", () => {
+                link.classList.add("active")
+                console.log(link);
+                // if (mobileView.classList.contains("show")) {
+                //     mobileView.classList.remove("show");
+                // }
+            });
+        });
+    </script> -->
 </body>
 </html>

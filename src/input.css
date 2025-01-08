@@ -25,7 +25,11 @@
   box-sizing: border-box;
 }
 .container{
-  @apply md:w-[85%] w-[100%] mx-auto
+  @apply md:w-[95%] w-[100%] mx-auto
+}
+
+.nav-link.active{
+  @apply lg:bg-secBlack/30 lg:backdrop-blur-lg p-1
 }
 
 .stat-card {
