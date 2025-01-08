@@ -439,7 +439,7 @@
             <div class="pt-5 mt-10 border-t border-gray-500">
                 <div class="grid grid-cols-12 items-center md:space-y-0 space-y-2">
                     <div class="md:col-span-5 col-span-12 md:text-start text-center">
-                        <h6 class="p-0 m-0">© Copyright 2024 @ buggybillions</h6>
+                        <h6 class="p-0 m-0">© Copyright <span id="year">2024</span> @ buggybillions</h6>
                     </div>
                     <div class="md:col-span-5 col-span-12 text-center">
                         <small class="p-0 m-0 text-xs">Can’t take fun out of the developer</small>
@@ -451,6 +451,13 @@
             </div>
         </div>
     </footer>
+
+    <script>
+        const currentYear = new Date().getFullYear();
+        const year = (currentYear >= 2024 && currentYear <= 2029) ? currentYear.toString() : null;
+
+        document.getElementById("year").innerHTML = year;
+    </script>
 
     <div class="w-full h-[100vh] bg-black/80 text-white fixed top-0 left-0 z-20 flex items-center justify-center p-10" id="popup">
         <button class="w-14 h-14 bg-pryPurple rounded-full flex items-center justify-center cursor-pointer shadow-xl shadow-accYellow/10 absolute top-10 right-10 rotate-45" id="closeModal">
